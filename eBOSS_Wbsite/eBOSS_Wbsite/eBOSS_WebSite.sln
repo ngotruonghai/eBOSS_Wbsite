@@ -11,10 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBOSS.Applycation", "eBOSS.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBOSS.Services", "eBOSS.Services\eBOSS.Services.csproj", "{9AB1616B-9B3A-48C9-AE73-D83244ECB1A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBOSS.Infrastructure", "eBOSS.Infrastructure\eBOSS.Infrastructure.csproj", "{F9E6EB56-BB7A-4AD1-A62B-AB2168BE4378}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBOSS.Domain", "eBOSS.Domain\eBOSS.Domain.csproj", "{0168AC50-22DD-4965-B8F7-30A2853F2E45}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,14 +33,6 @@ Global
 		{9AB1616B-9B3A-48C9-AE73-D83244ECB1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AB1616B-9B3A-48C9-AE73-D83244ECB1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AB1616B-9B3A-48C9-AE73-D83244ECB1A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9E6EB56-BB7A-4AD1-A62B-AB2168BE4378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F9E6EB56-BB7A-4AD1-A62B-AB2168BE4378}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9E6EB56-BB7A-4AD1-A62B-AB2168BE4378}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F9E6EB56-BB7A-4AD1-A62B-AB2168BE4378}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0168AC50-22DD-4965-B8F7-30A2853F2E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0168AC50-22DD-4965-B8F7-30A2853F2E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0168AC50-22DD-4965-B8F7-30A2853F2E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0168AC50-22DD-4965-B8F7-30A2853F2E45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

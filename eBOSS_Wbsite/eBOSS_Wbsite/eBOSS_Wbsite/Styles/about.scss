@@ -1,0 +1,199 @@
+@import './color.scss';
+@import './media.scss';
+
+// ABOUT
+.st-about {
+    .about-content {
+        line-height: 1.5;
+    }
+}
+
+//HISTORY
+.st-history {
+    .history-item {
+        padding: 20px;
+        border: 1px solid $cl-secondary;
+        border-radius: 8px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 32px;
+
+        @include mq(mdMax) {
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: bold;
+            color: $cl-secondary;
+            flex-basis: auto;
+
+            @include mq(smMax) {
+                font-size: 34px;
+            }
+        }
+
+        .text {
+            font-size: 18px;
+            flex: 1;
+            @include mq(smMax) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// MISSION AND VISION
+.st-vision {
+    .vision {
+        display: flex;
+        gap: 24px;
+
+        @include mq(mdMax) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-item {
+            max-width: 392px;
+            padding: 24px;
+            border: 1px solid $grey-10;
+
+            @include mq(mdMax) {
+                width: 100%;
+                max-width: none;
+            }
+        }
+        &-img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+        &-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: $grey-80;
+            margin-bottom: 8px;
+        }
+        &-desc {
+            color: $grey-50;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+}
+
+//CORE VALUE
+.st-value {
+    .value {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(mdMax) {
+            flex-direction: column;
+        }
+
+        &-content {
+            max-width: 600px;
+
+            @include mq(mdMax) {
+                max-width: 100%;
+            }
+        }
+
+        .ct-title {
+            @include mq(mdMax) {
+                text-align: center;
+            }
+        }
+
+        &-subtitle {
+            line-height: 1.5;
+            color: $grey-50;
+            margin-top: 40px;
+        }
+
+        &-list {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+
+            @include mq(mdMax) {
+                justify-content: center;
+            }
+        }
+
+        &-item {
+            max-width: 288px;
+            border: 1px solid $grey-10;
+            padding: 24px;
+
+            @include mq(mdMax) {
+                max-width: 392px;
+            }
+        }
+
+        &-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: $grey-80;
+            margin-bottom: 8px;
+        }
+
+        &-desc {
+            color: $grey-50;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+}
+
+//PERSONNEL
+.st-personnel {
+    .personnel {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 40px;
+
+        @include mq(mdMax) {
+            justify-content: center;
+        }
+    }
+    .personnel-item {
+        width: calc((100% - 72px)/4);
+
+        @include mq(lMax) {
+            width: calc((100% - 48px)/3);
+        }
+
+        @include mq(mdMax) {
+            width: calc((100% - 24px)/2);
+        }
+
+        @include mq(xsMax) {
+            width: 100%;
+        }
+    }
+
+    .personnel-img {
+        width: 100%;
+    }
+
+    .personnel-name {
+        color: $grey-80;
+        font-weight: bold;
+        margin-top: 16px;
+    }
+
+    .personnel-pos {
+        color: $cl-secondary;
+        margin-top: 4px;
+    }
+}

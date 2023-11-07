@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBOSS_WebSite", "eBOSS_Wbsite\eBOSS_WebSite.csproj", "{C106C8FC-011B-4987-A6B9-9797E41492C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eBOSS_WebSite", "eBOSS_Wbsite\eBOSS_WebSite.csproj", "{C106C8FC-011B-4987-A6B9-9797E41492C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBOSS.Core", "eBOSS.Core\eBOSS.Core.csproj", "{849A0F0B-D1EF-4717-BEDD-5C6D194FAEE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eBOSS.Core", "eBOSS.Core\eBOSS.Core.csproj", "{849A0F0B-D1EF-4717-BEDD-5C6D194FAEE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBOSS.Applycation", "eBOSS.Applycation\eBOSS.Applycation.csproj", "{8F15C9A8-B0C6-4EF0-A8C1-862FC0D4A61E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eBOSS.Applycation", "eBOSS.Applycation\eBOSS.Applycation.csproj", "{8F15C9A8-B0C6-4EF0-A8C1-862FC0D4A61E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBOSS.Services", "eBOSS.Services\eBOSS.Services.csproj", "{9AB1616B-9B3A-48C9-AE73-D83244ECB1A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eBOSS.Services", "eBOSS.Services\eBOSS.Services.csproj", "{9AB1616B-9B3A-48C9-AE73-D83244ECB1A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

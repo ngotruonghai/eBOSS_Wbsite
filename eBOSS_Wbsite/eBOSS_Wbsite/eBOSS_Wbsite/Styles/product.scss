@@ -1,0 +1,195 @@
+@import './color.scss';
+@import './media.scss';
+
+.p-product {
+
+  .product-list {
+    // justify-content: space-between;
+    // gap: unset;
+    // row-gap: 24px;
+
+    // @include mq(lgMax) {
+    //   row-gap: 16px;
+    // }
+
+    .frame-item {
+      width: calc((100% - 48px)/3);
+      max-width: none;
+
+      @include mq(lgMax) {
+        width: calc((100% - 24px)/2);
+      }
+
+      @include mq(smMax) {
+        width: 100%;
+      }
+
+      &-action {
+        color: $cl-primary;
+
+        a:hover {
+          color: $cl-primary-blue;
+
+          &+svg {
+            color: $cl-primary-blue;
+          }
+        }
+      }
+    }
+  }
+  .product {
+    width: 32%;
+
+    @include mq(mdMax) {
+      width: 49%;
+      max-width: max-content;
+    }
+
+    @include mq(smMax) {
+      width: 100%;
+      max-width: max-content;
+    }
+
+    &-img {
+      img {
+        @include mq(smMax) {
+          width: 100%;
+        }
+      }
+    }
+
+    &-content {
+      padding: 16px;
+    }
+  }
+}
+
+// WHY CHOOSE US
+.st-why {
+  .why {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 24px;
+
+      @include mq(smMax) {
+        row-gap: 16px;
+      }
+
+      // @include mq(lMin) {
+      //   gap: 24px;
+      // }
+    }
+
+    &-item {
+        max-width: 288px;
+        width: 25%;
+        border: 1px solid $grey-10;
+        padding: 24px;
+
+        @include mq(lMax) {
+          width: 49%;
+          max-width: unset;
+        }
+
+        @include mq(mdMax) {
+          width: 48%;
+          max-width: unset;
+        }
+
+        @include mq(smMax) {
+            width: 100%;
+            // max-width: 392px;
+        }
+    }
+
+    &-title {
+        font-size: 26px;
+        font-weight: 700;
+        color: $grey-80;
+        margin-bottom: 8px;
+    }
+
+    &-desc {
+        color: $grey-50;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+  }
+}
+
+// COMMNET SLIDER
+.comment-slider {
+  position: relative;
+  .swiper {position: unset;}
+  .swiper-button-prev, .swiper-button-next {
+    top: unset;
+    bottom: -70px;
+    &::after {
+      font-size: 16px;
+      padding: 14px;
+      width: 29px;
+      background-color: #2979FF;
+      border-radius: 8px;
+      color: $cl-text;
+      height: 25px;
+      /* text-align: center; */
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+  }
+  .swiper-button-prev {
+    left: 47%;
+
+    @include mq(lMax) {
+      left: 45%
+    }
+
+    @include mq(mdMax) {
+      left: 40%
+    }
+  }
+  .swiper-button-next {
+    right: 47%;
+
+    @include mq(lMax) {
+      right: 45%
+    }
+
+    @include mq(mdMax) {
+      right: 40%;
+    }
+  }
+  .mySwiper {
+    .swiper {
+      position: unset;
+    }
+    
+  }
+  .comment-box {
+    text-align: center;
+    padding: 32px;
+    border: 1px solid $grey-20;
+    border-radius: 8px;
+    .comment-img {
+      margin-bottom: 12px;
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+    }
+
+    .comment-desc {
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .comment-name {
+      font-weight: bold;
+    }
+  }
+}

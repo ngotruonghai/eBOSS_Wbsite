@@ -19,9 +19,10 @@ namespace eBOSS_WebSite
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllersWithViews();
+            services.AddMvc();
 
 			#if DEBUG
-				services.AddSassCompiler();
+            services.AddSassCompiler();
 			#endif
 		}
 	}

@@ -128,28 +128,28 @@
         @include mq(smMax) {
             gap: 24px;
         }
-
         // @include mq(lgMax) {
         //     gap: 29px;
         // }
-    
+
         &-item {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             gap: 24px;
+            width: calc((100% - 264px)/4);
 
             @include mq(lgMax) {
                 max-width: 200px;
             }
         }
-    
+
         &-text {
             display: flex;
             flex-direction: column;
             gap: 16px;
         }
-    
+
         &-num {
             font-size: 72px;
             font-weight: 600;
@@ -158,7 +158,7 @@
                 font-size: 56px;
             }
         }
-    
+
         &-title {
             font-size: 26px;
             font-weight: 600;
@@ -167,14 +167,14 @@
                 font-size: 22px;
             }
         }
-    
+
         &-line {
             height: 12px;
             border-radius: 8px;
             background-color: $grey-5;
             width: 240px;
             position: relative;
-    
+
             @include mq(lMax) {
                 max-width: 216px;
             }
@@ -182,7 +182,7 @@
             @include mq(lgMax) {
                 max-width: 200px;
             }
-    
+
             &::after {
                 content: "";
                 position: absolute;
@@ -191,21 +191,23 @@
                 width: var(--width-a);
                 height: inherit;
                 border-radius: 8px;
-    
             }
-    
+
             &.cl-primary::after {
                 background: var(--secondary-100, #FF793B);
                 box-shadow: 0px 16px 40px 0px rgba(255, 114, 12, 0.32);
             }
+
             &.cl-blue::after {
                 background: var(--primary-blue-50, #2979FF);
                 box-shadow: 0px 16px 40px 0px rgba(12, 36, 255, 0.32);
             }
+
             &.cl-green::after {
                 background: linear-gradient(0deg, #3CC13B 0%, #3CC13B 100%), $cl-text;
                 box-shadow: 0px 16px 40px 0px rgba(12, 255, 36, 0.32);
             }
+
             &.cl-dark-blue::after {
                 background: linear-gradient(0deg, rgba(41, 121, 255, 0.60) 0%, rgba(41, 121, 255, 0.60) 100%), #000;
                 box-shadow: 0px 16px 40px 0px rgba(12, 36, 255, 0.32);
@@ -313,25 +315,6 @@
                 -moz-transition: opacity .5s ease-in-out;
                 -o-transition: opacity .5s ease-in-out;
             }
-
-            // &::before {
-            //     border-radius: 8px;
-            //     background-image: (var(--bg-img));
-            //     background-position: center;
-            //     content: "";
-            //     opacity: 0;
-            //     width: inherit;
-            //     height: inherit;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     /* TRANSISITION */
-            //     transition: opacity .5s ease-in-out;
-            //     -webkit-transition: opacity .5s ease-in-out;
-            //     -moz-transition: opacity .5s ease-in-out;
-            //     -o-transition: opacity .5s ease-in-out;
-            //     z-index: -1;
-            // }
 
             &::after {
                 border-radius: 8px;

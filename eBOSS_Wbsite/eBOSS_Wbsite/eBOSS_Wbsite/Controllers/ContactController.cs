@@ -2,7 +2,7 @@
 
 namespace eBOSS_WebSite.Controllers
 {
-    public class About : Controller
+    public class ContactController : Controller
     {
         public IActionResult Index()
         {

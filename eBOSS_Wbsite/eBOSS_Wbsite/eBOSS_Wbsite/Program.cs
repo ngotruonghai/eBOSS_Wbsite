@@ -21,7 +21,24 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "about",
+    pattern: "gioi-thieu",
+    defaults: new { controller = "About", action = "Index" });
+
+app.MapControllerRoute(
+    name: "blog",
+    pattern: "tin-tuc",
+    defaults: new { controller = "Blog", action = "Index" });
+
+app.MapControllerRoute(
+    name: "blog_details",
+    pattern: "blog/{id}",
+    defaults: new { controller = "Blog", action = "Details" });
+
+app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
+
 
 app.Run();

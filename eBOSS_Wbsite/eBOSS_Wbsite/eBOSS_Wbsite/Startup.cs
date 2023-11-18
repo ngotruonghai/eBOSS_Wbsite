@@ -21,9 +21,9 @@ namespace eBOSS_WebSite
 			services.AddControllersWithViews();
             services.AddMvc();
 
-			#if DEBUG
+            #if DEBUG
             services.AddSassCompiler();
-			#endif
-		}
-	}
+            #endif
+        }
+    }
 }

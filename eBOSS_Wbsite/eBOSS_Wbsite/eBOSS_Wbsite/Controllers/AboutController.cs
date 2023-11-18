@@ -8,5 +8,15 @@ namespace eBOSS_WebSite.Controllers
         {
             return View();
         }
+
+        public IActionResult component()
+        {
+            return PartialView();
+        }
+
+        public IActionResult component2()
+        {
+            return PartialView();
+        }
     }
 }

@@ -2,6 +2,9 @@
     ViewData["Title"] = "Trang chủ";
 }
 
+@await Html.PartialAsync("/Views/About/component.cshtml")
+@await Html.PartialAsync("/Views/About/component2.cshtml")
+
 <!-- Slider Start -->
 <section class="st-slider">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">

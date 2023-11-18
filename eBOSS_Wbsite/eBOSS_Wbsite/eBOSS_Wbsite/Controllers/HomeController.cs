@@ -28,5 +28,21 @@ namespace eBOSS_Wbsite.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpPost]
+        public IActionResult HandleForm(string submitButton)
+        {
+            if (submitButton == "submit")
+            {
+                // Code to handle the submit button click
+            }
+            else if (submitButton == "reset")
+            {
+                // Code to handle the reset button click or perform a different action
+            }
+
+            // Redirect or return a view as needed
+            return View("Privacy");
+        }
     }
 }
